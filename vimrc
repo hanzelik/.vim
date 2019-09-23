@@ -99,7 +99,7 @@ noremap <Right> <Nop>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
 
-let g:linuxsty_patterns = ["/linux", "/devel/c"]
+let g:linuxsty_patterns = ["../devel/c"]
 
 set number relativenumber
 
