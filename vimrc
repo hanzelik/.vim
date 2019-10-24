@@ -87,6 +87,7 @@ set tm=500
 syntax enable
 
 let g:linuxsty_patterns = ["../linux", "../devel/c"]
+let g:pymode_python = 'python3'
 
 set number relativenumber
 
