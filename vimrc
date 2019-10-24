@@ -31,6 +31,9 @@ Plug 'jnurmine/Zenburn'
 " Wal colorscheme
 Plug 'dylanaraps/wal.vim'
 
+" Python-mode for Python development
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
