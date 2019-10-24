@@ -51,15 +51,6 @@ set autoread
 
 let mapleader=","
 
-" Set leader w to be quick write
-nmap <leader>w :w!<cr>
-
-" NERDTree toggle
-nmap <leader>n :NERDTreeToggle<cr>
-
-" Tagbar toggle
-nmap <leader>t :TagbarToggle<cr>
-
 set wildmenu
 
 set ruler
@@ -87,19 +78,12 @@ set noerrorbells
 set novisualbell
 set t_vb=
 set tm=500
-
-" Disable arrow keys
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colors/Style
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
 
-let g:linuxsty_patterns = ["../devel/c"]
+let g:linuxsty_patterns = ["../linux", "../devel/c"]
 
 set number relativenumber
 
@@ -123,3 +107,20 @@ set tw=500
 set ai
 set si
 set wrap
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Remaps
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Disable arrow keys
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+nmap <leader>n :NERDTreeToggle<cr>
+
+nmap <leader>t :TagbarToggle<cr>
+
+noremap <Leader>b :blast<cr>
+noremap <Leader>n :bNext<cr>
