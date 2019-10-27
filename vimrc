@@ -52,8 +52,6 @@ filetype indent on
 
 set autoread
 
-let mapleader=","
-
 set wildmenu
 
 set ruler
@@ -116,16 +114,21 @@ set wrap
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remaps
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let mapleader=","
 
-" Disable arrow keys
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-nmap <leader>n :NERDTreeToggle<cr>
+map <C-J> <C-W>j<C-W><cr>
+map <C-K> <C-W>k<C-W><cr>
+map <C-H> <C-W>h<C-W><cr>
+map <C-L> <C-W>l<C-W><cr>
 
-nmap <leader>t :TagbarToggle<cr>
+noremap <leader>d :NERDTreeToggle<cr>
 
-noremap <Leader>b :blast<cr>
+noremap <leader>t :TagbarToggle<cr>
+
+noremap <Leader>m :blast<cr>
 noremap <Leader>n :bNext<cr>
