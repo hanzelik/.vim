@@ -31,10 +31,16 @@ Plug 'jnurmine/Zenburn'
 " Wal colorscheme
 Plug 'dylanaraps/wal.vim'
 
+" Black background colorscheme
+Plug 'plainfingers/black_is_the_color'
+
 " Python-mode for Python development
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 
 call plug#end()
+
+let g:cssColorVimDoNotMessMyUpdatetime = 1
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General
@@ -92,8 +98,9 @@ set number relativenumber
 
 set t_Co=256
 
-colors zenburn
+"colors zenburn
 "colorscheme wal
+colorscheme black_is_the_color
 
 set nobackup
 set nowb
