@@ -13,6 +13,9 @@ call plug#begin('~/.vim/plugged')
 " Begin vim pluggins for vim-plug
 Plug 'scrooloose/nerdtree' 
 
+" Git wrapper for vim
+Plug 'tpope/vim-fugitive'
+
 " Tagbar for Vim
 Plug 'majutsushi/tagbar'
 
